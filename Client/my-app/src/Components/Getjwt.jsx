@@ -22,6 +22,8 @@ function Getjwt() {
       <h4 style={{color:'green'}}>{props.user.text.age} </h4> */}
       <button onClick={logoutHandler }>Logout</button>
       <Link to='update'  >update</Link>
+      {/* <Link to='update'  >update</Link> */}
+
     </div>
   );
 }

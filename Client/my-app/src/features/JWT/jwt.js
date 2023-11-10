@@ -12,7 +12,6 @@ export const jwtSlice=createSlice({
                 text:action.payload,
             }
             state.jwts.push(jwt)
-
         },
         logout:(state,action)=>{
             state.jwts=[]

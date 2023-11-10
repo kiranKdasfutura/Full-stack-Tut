@@ -1,10 +1,12 @@
 const mongoose=require('mongoose')
 
 const Userschema=new mongoose.Schema({
-    name:{type:String,require:true},
-    age:{type:String,require:true},
-    password:{type:String,require:true},
+    Name:{type:String,require:true},
+    Email:{type:String,require:true},
+    Password:{type:String,require:true},
     Images:{type:String},
+    Otp:{type:String},
+    OtpExpiration:{type:String},
 
 } ,{timestamps:true});
 

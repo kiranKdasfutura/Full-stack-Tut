@@ -26,7 +26,6 @@ const LoginUser = () => {
 
   return (
     <div style={{padding:'100px',alignItems:'center',textAlign:'center',lineHeight:'2'}}>
-    
       <h1>User Login</h1>
       <form onSubmit={submitHandler}>
         <label htmlFor="name">Name</label>
@@ -36,20 +35,22 @@ const LoginUser = () => {
           placeholder="Enter name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          // defaultValue={'kiran'}
         />
         <br></br>
         <label htmlFor="name">Password</label>
     
         <input
           type="password"
-          id="age"
+          id="password"
           placeholder="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          // defaultValue={'kiran'}
         /><br/>
         <button type="submit">Submit</button><br />
-        <Link to={'/signup'}>signup page</Link>
-
+        <Link to={'/signup'}>signup page</Link><br />
+        <Link to={'/gamil'}>Login with Gamil OTP</Link>
       </form>
     </div>
   );
